@@ -3,42 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karta Gracza</title>
+  <title>GameStudio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="player-card">
-    <!-- TODO: dodaj sekcje karty gracza -->
-    <header class="card-header">
-      <h1> 🎮Karta Gracza🎮 </h1>
-      <p>Nick: <span class="highlight">Druid1A</span></p>
-    </header>
-  
-  <section class="card-section bio">
-    <h2>bio</h2>
-    <p>Poziom: <strong>219</strong></p>
-    <p>Klasa: <strong>Złota opaska🎇</strong></p>
-    <p>Glidia: <strong>Drifter🚗</strong></p>
-  </section>
-  <section class="card-section equipment">
-    <h2>Domy</h2>
-    <ul>
-      <li>Night Vision House⛩</li>
-      <li>Tokyo City House🗼</li>
-      <li>Sotoyama House🗻</li>
-    </ul>
-  </section>
-  <section class="card-section achievements">
-    <h2>Osiągniencia</h2>
-    <ul>
-      <li>Strefy Driftu🌫🏆</li>
-      <li>Wyścigi Touge🏁🏆</li>
-      <li>Wyścigi Uliczne🚘🏆</li>
-    </ul>
-  </section>
-  <footer class="card-footer">
-    <p>ostatnia aktywność: <time datetime="2026-10.5">5 października 2026</time></p>
-  </footer>
-  </main>
+<nav>
+    <span class="logo">GameStudio</span>
+    <div>
+    <a href="#start">Start</a>
+    <a href="#o-nas">O nas</a>
+    <a href="#kontakt">Kontakt</a>
+    </div>
+</nav>
+<header>
+  <h1>GameStudio</h1>
+  <p> Polska firma tworząca gry.</p>
+</header>
+<section id="start"class="light">
+  <h2>Witaj w naszym studiu gier!</h2>
+  <p> Witaj w GameStudio! Tworzymy gry.</p>
+  <p>Jesteśmy polską firmą tworzącą gry.</p>
+  <p>sprawdź nasze gry na dowolnej platformie.</p>
+</section>
+<section id="o-nas"class="dark">
+  <h2>O nas</h2>
+  <p>Jesteśmy profesjonalnym studiem gier</p>
+  <p>Skupiamy się na jak najlepszym dopracowaniu naszych projektów</p>
+  <p>Naszym największym projektem jest gra pobrana 100 000 razy!</p>
+  <p>Mamy siedzibę w Warszawie od 2010 roku.</p>
+  <p>A istniejemy od 2005 roku</p>
+  <p>Nasz zespół składa się z 23 osób.</p>
+  <p>Robimy również kursy z programowania dla osób od 13 do 23 lat.</p>
+  <p>Naszym celem jest tworzenie gier, do których chce się wracać.</p>
+</section>
+<section id="kontakt" class="light">
+  <h2>Kontakt</h2>
+  <p>Chcesz z nami współpracować?</p>
+  <p>Obecnie szukamy programisty i grafika</p>
+  <p>do pomocy w naszym najnowszym i największym projekcie</p>
+  <p>Chcesz się dowiedzieć więcej?</p>
+  <p>Napisz na GameStudio-Kontakt@gmail.code</p>
+  <p>Odpisujemy w ciągu 3 dni roboczych.</p>
+</section>
+<footer>Wszystkie prawa zastrzeżone 2026 ®</footer>
+<script>
+  "use strict";
+  window.addEventListener("scroll", function(){
+    var nav = document.querySelector("nav");
+    if (window.scrollY > 50){
+      nav.classList.add("scrolled");
+    }else {
+      nav.classList.remove("scrolled");
+    }
+  });
+</script>
 </body>
 </html>
